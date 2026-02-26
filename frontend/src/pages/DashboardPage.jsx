@@ -32,7 +32,7 @@ const DashboardPage = () => {
     try {
       const token = localStorage.getItem("token");
 
-      await fetch("http://localhost:5000/api/emergency/sos", {
+      await fetch("https://new-women-safety-app.onrender.com/api/emergency/sos", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ const DashboardPage = () => {
       );
 
       const res = await fetch(
-        "http://localhost:5000/api/emergency/trigger",
+        "https://new-women-safety-app.onrender.com/api/emergency/trigger",
         {
           method: "POST",
           headers: {

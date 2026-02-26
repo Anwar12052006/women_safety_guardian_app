@@ -1,6 +1,6 @@
 // import axios from "axios";
 
-// const API = "http://localhost:5000/api/trusted-contacts";
+// const API = "https://new-women-safety-app.onrender.com/api/trusted-contacts";
 
 // const getToken = () => localStorage.getItem("token");
 

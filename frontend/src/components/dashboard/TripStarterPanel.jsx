@@ -22,7 +22,7 @@ export default function TripStarterPanel() {
 
             const token = localStorage.getItem("token");
             const res = await axios.post(
-                "http://localhost:5000/api/trips",
+                "https://new-women-safety-app.onrender.com/api/trips",
                 {
                     startCoordinates: [position.coords.longitude, position.coords.latitude],
                     destinationCoordinates: [destLng, destLat],

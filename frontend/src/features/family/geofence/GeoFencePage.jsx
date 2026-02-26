@@ -12,7 +12,7 @@ export default function GeoFencePage() {
     const fetchGeofences = async () => {
         try {
             const token = localStorage.getItem("token");
-            const res = await axios.get("http://localhost:5000/api/geofence", {
+            const res = await axios.get("https://new-women-safety-app.onrender.com/api/geofence", {
                 headers: { Authorization: `Bearer ${token}` }
             });
             if (res.data.success) {
@@ -26,7 +26,7 @@ export default function GeoFencePage() {
     const handleDelete = async (id) => {
         try {
             const token = localStorage.getItem("token");
-            await axios.delete(`http://localhost:5000/api/geofence/${id}`, {
+            await axios.delete(`https://new-women-safety-app.onrender.com/api/geofence/${id}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             fetchGeofences();

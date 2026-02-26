@@ -25,7 +25,7 @@ export default function SafeRoutePage() {
         try {
             const token = localStorage.getItem("token");
             const res = await axios.post(
-                "http://localhost:5000/api/saferoute/analyze",
+                "https://new-women-safety-app.onrender.com/api/saferoute/analyze",
                 { startLocation, destination },
                 { headers: { Authorization: `Bearer ${token}` } }
             );

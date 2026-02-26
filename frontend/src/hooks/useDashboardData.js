@@ -35,7 +35,7 @@ export const useDashboardData = (navigate) => {
     navigator.geolocation.getCurrentPosition(async (pos) => {
       try {
         const res = await fetch(
-          `http://localhost:5000/api/location/risk?lat=${pos.coords.latitude}&lng=${pos.coords.longitude}`,
+          `https://new-women-safety-app.onrender.com/api/location/risk?lat=${pos.coords.latitude}&lng=${pos.coords.longitude}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
 
@@ -65,7 +65,7 @@ export const useDashboardData = (navigate) => {
 
   const fetchDashboard = async (token) => {
     try {
-      const res = await fetch("http://localhost:5000/api/dashboard", {
+      const res = await fetch("https://new-women-safety-app.onrender.com/api/dashboard", {
         headers: { Authorization: `Bearer ${token}` },
       });
 

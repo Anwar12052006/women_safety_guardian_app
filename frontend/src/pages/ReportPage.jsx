@@ -19,7 +19,7 @@ const ReportPage = () => {
       try {
 
         const res =
-          await fetch("http://localhost:5000/api/templates");
+          await fetch("https://new-women-safety-app.onrender.com/api/templates");
 
         const data =
           await res.json();
@@ -116,7 +116,7 @@ const ReportPage = () => {
         localStorage.getItem("token");
 
       const res = await fetch(
-        "http://localhost:5000/api/incidents",
+        "https://new-women-safety-app.onrender.com/api/incidents",
         {
           method: "POST",
           headers: {

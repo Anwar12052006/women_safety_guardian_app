@@ -13,7 +13,7 @@ const AuthorityIncidentDetailsPage = () => {
       const token = localStorage.getItem("token");
 
       const res = await fetch(
-        `http://localhost:5000/api/incidents/${id}`,
+        `https://new-women-safety-app.onrender.com/api/incidents/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

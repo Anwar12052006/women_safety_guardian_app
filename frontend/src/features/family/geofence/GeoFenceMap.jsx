@@ -26,7 +26,7 @@ export default function GeoFenceMap({ geofences, refresh }) {
         setLoading(true);
         try {
             const token = localStorage.getItem("token");
-            await axios.post("http://localhost:5000/api/geofence", {
+            await axios.post("https://new-women-safety-app.onrender.com/api/geofence", {
                 name: zoneName,
                 coordinates: [newZone.lng, newZone.lat], // GeoJSON order
                 radius: 500

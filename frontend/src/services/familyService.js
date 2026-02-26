@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/family";
+const API = "https://new-women-safety-app.onrender.com/api/family";
 
 export const getFamilyMember = (id) =>
   axios.get(`${API}/${id}`);

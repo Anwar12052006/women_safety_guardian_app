@@ -12,7 +12,7 @@ export default function TripsPage() {
     const fetchTrips = async () => {
         try {
             const token = localStorage.getItem("token");
-            const res = await axios.get("http://localhost:5000/api/trips", {
+            const res = await axios.get("https://new-women-safety-app.onrender.com/api/trips", {
                 headers: { Authorization: `Bearer ${token}` }
             });
             if (res.data.success) {
@@ -26,7 +26,7 @@ export default function TripsPage() {
     const endTrip = async (id) => {
         try {
             const token = localStorage.getItem("token");
-            await axios.patch(`http://localhost:5000/api/trips/${id}/end`, {}, {
+            await axios.patch(`https://new-women-safety-app.onrender.com/api/trips/${id}/end`, {}, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             fetchTrips();

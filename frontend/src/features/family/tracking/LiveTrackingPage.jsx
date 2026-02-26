@@ -6,7 +6,7 @@ import BatteryNetworkStatus from "./BatteryNetworkStatus";
 import TrackingTransparencyBanner from "./TrackingTransparencyBanner";
 import TrackingLogPanel from "./TrackingLogPanel";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://new-women-safety-app.onrender.com");
 
 export default function LiveTrackingPage() {
   const [location, setLocation] = useState([28.6139, 77.209]);

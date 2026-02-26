@@ -106,7 +106,7 @@
 //       setLoading(true);
 
 //       const res = await fetch(
-//         "http://localhost:5000/api/auth/register",
+//         "https://new-women-safety-app.onrender.com/api/auth/register",
 //         {
 //           method: "POST",
 
@@ -457,7 +457,7 @@ const SignupPage = () => {
       setLoading(true);
 
       const res = await fetch(
-        "http://localhost:5000/api/auth/register",
+        "https://new-women-safety-app.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {

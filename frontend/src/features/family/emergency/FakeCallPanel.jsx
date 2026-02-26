@@ -11,7 +11,7 @@ export default function FakeCallPanel() {
         setStatus("Triggering...");
         try {
             const token = localStorage.getItem("token");
-            await axios.post("http://localhost:5000/api/dashboard/fake-call", {}, {
+            await axios.post("https://new-women-safety-app.onrender.com/api/dashboard/fake-call", {}, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setStatus("Fake Call Sent");

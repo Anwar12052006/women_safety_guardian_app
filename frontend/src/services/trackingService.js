@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-"http://localhost:5000/api/tracking";
+"https://new-women-safety-app.onrender.com/api/tracking";
 
 export const shareLocation =
 () =>

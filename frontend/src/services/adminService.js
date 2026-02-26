@@ -9,26 +9,26 @@ const getConfig = () => {
 };
 
 export const getAdminStats = async () => {
-    const response = await axios.get("http://localhost:5000/api/admin/stats", getConfig());
+    const response = await axios.get("https://new-women-safety-app.onrender.com/api/admin/stats", getConfig());
     return response.data;
 };
 
 export const getAllUsers = async () => {
-    const response = await axios.get("http://localhost:5000/api/admin/users", getConfig());
+    const response = await axios.get("https://new-women-safety-app.onrender.com/api/admin/users", getConfig());
     return response.data;
 };
 
 export const getAllAlerts = async () => {
-    const response = await axios.get("http://localhost:5000/api/admin/alerts", getConfig());
+    const response = await axios.get("https://new-women-safety-app.onrender.com/api/admin/alerts", getConfig());
     return response.data;
 };
 
 export const getAllIncidents = async () => {
-    const response = await axios.get("http://localhost:5000/api/admin/incidents", getConfig());
+    const response = await axios.get("https://new-women-safety-app.onrender.com/api/admin/incidents", getConfig());
     return response.data;
 };
 
 export const toggleBlockUser = async (userId) => {
-    const response = await axios.patch(`http://localhost:5000/api/admin/users/${userId}/block`, {}, getConfig());
+    const response = await axios.patch(`https://new-women-safety-app.onrender.com/api/admin/users/${userId}/block`, {}, getConfig());
     return response.data;
 };

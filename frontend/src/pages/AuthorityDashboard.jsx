@@ -67,7 +67,7 @@ export default function AuthorityDashboard() {
   const fetchStats = async () => {
     const token = localStorage.getItem("token");
     const res = await axios.get(
-      "http://localhost:5000/api/authority/stats",
+      "https://new-women-safety-app.onrender.com/api/authority/stats",
       { headers: { Authorization: `Bearer ${token}` } }
     );
     setStats(res.data);
@@ -76,7 +76,7 @@ export default function AuthorityDashboard() {
   const fetchAlerts = async () => {
     const token = localStorage.getItem("token");
     const res = await axios.get(
-      "http://localhost:5000/api/authority/alerts",
+      "https://new-women-safety-app.onrender.com/api/authority/alerts",
       { headers: { Authorization: `Bearer ${token}` } }
     );
     setAlerts(Array.isArray(res.data) ? res.data : []);
@@ -85,7 +85,7 @@ export default function AuthorityDashboard() {
   const fetchIncidents = async () => {
     const token = localStorage.getItem("token");
     const res = await axios.get(
-      "http://localhost:5000/api/authority/incidents",
+      "https://new-women-safety-app.onrender.com/api/authority/incidents",
       { headers: { Authorization: `Bearer ${token}` } }
     );
     setIncidents(Array.isArray(res.data) ? res.data : []);
@@ -94,7 +94,7 @@ export default function AuthorityDashboard() {
   const fetchPatrols = async () => {
     const token = localStorage.getItem("token");
     const res = await axios.get(
-      "http://localhost:5000/api/patrols",
+      "https://new-women-safety-app.onrender.com/api/patrols",
       { headers: { Authorization: `Bearer ${token}` } }
     );
     setPatrols(Array.isArray(res.data) ? res.data : []);
@@ -104,7 +104,7 @@ export default function AuthorityDashboard() {
   const assignPatrol = async (id) => {
     const token = localStorage.getItem("token");
     await axios.post(
-      "http://localhost:5000/api/authority/assign",
+      "https://new-women-safety-app.onrender.com/api/authority/assign",
       { alertId: id },
       { headers: { Authorization: `Bearer ${token}` } }
     );
@@ -115,7 +115,7 @@ export default function AuthorityDashboard() {
   const updateIncidentStatus = async (id, status) => {
     const token = localStorage.getItem("token");
     await axios.patch(
-      `http://localhost:5000/api/authority/incidents/${id}/status`,
+      `https://new-women-safety-app.onrender.com/api/authority/incidents/${id}/status`,
       { status },
       { headers: { Authorization: `Bearer ${token}` } }
     );

@@ -50,7 +50,7 @@ export default function LiveTrackingPage() {
   const fetchContacts = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/trusted-contacts",
+        "https://new-women-safety-app.onrender.com/api/trusted-contacts",
         {
           headers:
           {

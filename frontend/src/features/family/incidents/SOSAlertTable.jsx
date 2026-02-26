@@ -13,7 +13,7 @@ export default function SOSAlertTable() {
     const fetchEmergencies = async () => {
         try {
             const token = localStorage.getItem("token");
-            const res = await axios.get("http://localhost:5000/api/emergency", {
+            const res = await axios.get("https://new-women-safety-app.onrender.com/api/emergency", {
                 headers: { Authorization: `Bearer ${token}` }
             });
             if (res.data.success) {

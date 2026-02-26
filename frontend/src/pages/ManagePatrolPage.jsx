@@ -16,7 +16,7 @@ export default function ManagePatrolPage() {
     const token = localStorage.getItem("token");
 
     await axios.post(
-      "http://localhost:5000/api/authority/create-patrol",
+      "https://new-women-safety-app.onrender.com/api/authority/create-patrol",
       form,
       { headers: { Authorization: `Bearer ${token}` } }
     );
