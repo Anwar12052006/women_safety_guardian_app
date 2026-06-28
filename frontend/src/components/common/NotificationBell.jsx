@@ -17,11 +17,13 @@ const NotificationBell = ({ userId }) => {
 
       console.log("New notification:", notification);
 
-      // Trigger the DOM audio
-      const siren = document.getElementById("emergency-siren");
-      if (siren) {
-        siren.volume = 1.0;
-        siren.play().catch(e => console.log("Audio play prevented by browser policy:", e));
+      // Only play alarm for CRITICAL/HIGH priority (actual emergencies)
+      if (notification.type === "CRITICAL" || notification.type === "HIGH") {
+        const siren = document.getElementById("emergency-siren");
+        if (siren) {
+          siren.volume = 1.0;
+          siren.play().catch(e => console.log("Audio play prevented by browser policy:", e));
+        }
       }
 
       setNotifications((prev) => [
