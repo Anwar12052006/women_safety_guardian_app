@@ -18,8 +18,18 @@ import aiRouteRoutes from "./routes/aiRouteRoutes.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://women-safety-proj.onrender.com",
+  ],
+  credentials: true,
+}));
 app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.json({ success: true, message: "Women Safety App API is running" });
+});
 
 app.get("/api/health", (req, res) => {
   res.json({ success: true, message: "API is running" });
