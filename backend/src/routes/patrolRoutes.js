@@ -1,5 +1,5 @@
 import express from "express";
-import Patrol from "../models/patrol.js";
+import Patrol from "../models/Patrol.js";
 import authMiddleware from "../middleware/authMiddleware.js";
 
 const router = express.Router();
