@@ -1,26 +1,3 @@
-// const SOSCard = ({ handleSOS }) => {
-//   return (
-//     <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center justify-center">
-//       <h2 className="text-lg font-bold text-indigo-900 mb-4">
-//         Emergency SOS
-//       </h2>
-
-//       <button
-//         onClick={handleSOS}
-//         className="w-40 h-40 rounded-full bg-red-600 hover:bg-red-500 text-white font-bold text-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-//       >
-//         SOS
-//       </button>
-
-//       <p className="text-sm text-gray-600 mt-4 text-center">
-//         Press in emergency to alert guardians & authorities.
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default SOSCard;
-
 
 
 const SOSCard = ({ handleSOS }) => {

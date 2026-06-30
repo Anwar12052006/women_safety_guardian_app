@@ -1,20 +1,3 @@
-// const AreaSafetyCard = ({ areaSafety }) => {
-//   return (
-//     <div className="bg-white/95 rounded-2xl shadow-lg p-5 text-center">
-//       <h2 className="text-lg font-bold text-indigo-900 mb-2">
-//         Area Safety
-//       </h2>
-
-//       <div className="text-3xl font-bold text-green-600">
-//         {areaSafety}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default AreaSafetyCard;
-
-
 
 
 const AreaSafetyCard = ({ areaSafety }) => {

@@ -1,41 +1,4 @@
-// import mongoose from "mongoose";
 
-// const trustedContactSchema = new mongoose.Schema(
-//   {
-//     userId: {
-//       type: mongoose.Schema.Types.ObjectId,
-//       ref: "User",
-//       required: true,
-//     },
-
-//     name: {
-//       type: String,
-//       required: true,
-//       trim: true,
-//     },
-
-//     phone: {
-//       type: String,
-//       required: true,
-//       trim: true,
-//     },
-
-//     relation: {
-//       type: String,
-//       enum: ["Father", "Mother", "Brother", "Sister", "Friend", "Police", "Other"],
-//       default: "Other",
-//     },
-
-//     priority: {
-//       type: String,
-//       enum: ["Primary", "Secondary", "Emergency"],
-//       default: "Primary",
-//     },
-//   },
-//   { timestamps: true }
-// );
-
-// export default mongoose.model("TrustedContact", trustedContactSchema);
 
 import mongoose from "mongoose";
 

@@ -1,54 +1,20 @@
-// import express from "express";
-// import
-// {
-//  shareLiveLocation,
-//  getTrackingStatus,
-//  trackerJoined
-// }
-// from "../controllers/trackingController.js";
-
-// import authMiddleware
-// from "../middleware/authMiddleware.js";
-
-// const router = express.Router();
-
-// router.post(
-//  "/share-location",
-//  authMiddleware,
-//  shareLiveLocation
-// );
-
-// router.get(
-//  "/status/:userId",
-//  getTrackingStatus
-// );
-
-// router.post(
-//  "/tracker-joined/:userId",
-//  trackerJoined
-// );
-
-// export default router;
-
-
 
 import express from "express";
 
-import
-{
-  shareLiveLocation,
-  getTrackingStatus,
-  trackerJoined,
+import {
+shareLiveLocation,
+getTrackingStatus,
+trackerJoined,
 
-  // NEW ROUTES
-  updateLiveLocation,
-  getLiveLocation
+// NEW ROUTES
+updateLiveLocation,
+getLiveLocation
 
 }
-from "../controllers/trackingController.js";
+  from "../controllers/trackingController.js";
 
 import authMiddleware
-from "../middleware/authMiddleware.js";
+  from "../middleware/authMiddleware.js";
 
 
 const router = express.Router();

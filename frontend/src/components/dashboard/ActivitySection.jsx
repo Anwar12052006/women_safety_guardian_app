@@ -1,35 +1,3 @@
-// const ActivitySection = ({ activities }) => {
-//   return (
-//     <div className="bg-white/95 rounded-2xl shadow-lg p-5">
-//       <h2 className="text-lg font-bold text-indigo-900 mb-4">
-//         Recent Activity
-//       </h2>
-
-//       {activities?.length === 0 ? (
-//         <p className="text-sm text-gray-500">
-//           No recent activity
-//         </p>
-//       ) : (
-//         activities.map((activity, index) => (
-//           <div
-//             key={index}
-//             className="flex items-center gap-3 bg-indigo-50 p-3 rounded-xl"
-//           >
-//             <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-//             <p className="text-sm text-gray-700">
-//               {activity.message}
-//             </p>
-//             <span className="ml-auto text-xs text-gray-500">
-//               {new Date(activity.createdAt).toLocaleTimeString()}
-//             </span>
-//           </div>
-//         ))
-//       )}
-//     </div>
-//   );
-// };
-
-// export default ActivitySection;
 
 
 const ActivitySection = ({ activities }) => {

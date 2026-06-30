@@ -1,31 +1,3 @@
-// import axios from "axios";
-
-// const API = "https://new-women-safety-app.onrender.com/api/trusted-contacts";
-
-// const getToken = () => localStorage.getItem("token");
-
-// export const getContacts = () =>
-//   axios.get(API, {
-//     headers: { Authorization: `Bearer ${getToken()}` },
-//   });
-
-// export const addContact = (data) =>
-//   axios.post(API, data, {
-//     headers: { Authorization: `Bearer ${getToken()}` },
-//   });
-
-// export const deleteContact = (id) =>
-//   axios.delete(`${API}/${id}`, {
-//     headers: { Authorization: `Bearer ${getToken()}` },
-//   });
-
-// export const sendSOS = () =>
-//   axios.post(`${API}/sos`, {}, {
-//     headers: { Authorization: `Bearer ${getToken()}` },
-//   });
-
-
-
 
 import axios from "axios";
 

@@ -1,26 +1,3 @@
-// import express from "express";
-
-// import {
-//   addTrustedContact,
-//   getTrustedContacts,
-//   deleteTrustedContact,
-//   sendSOSToAll,
-// } from "../controllers/trustedContactController.js";
-
-// import authMiddleware from "../middleware/authMiddleware.js";
-
-// const router = express.Router();
-
-// router.post("/", authMiddleware, addTrustedContact);
-
-// router.get("/", authMiddleware, getTrustedContacts);
-
-// router.delete("/:id", authMiddleware, deleteTrustedContact);
-
-// router.post("/sos", authMiddleware, sendSOSToAll);
-
-// export default router;
-
 
 
 import express from "express";
